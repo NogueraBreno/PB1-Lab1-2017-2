@@ -29,5 +29,7 @@ namespace PB1CSTADS2207.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<PB1CSTADS2207.Models.Automovel> Automovels { get; set; }
     }
 }
