@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<PB1CSTADS2207.Models.Automovel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Inicio";
 }
 
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Adicionar novo Automovel", "Create")
 </p>
 <table class="table">
     <tr>
@@ -47,9 +47,9 @@
             @Html.DisplayFor(modelItem => item.DataCadastro)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AutomovelId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.AutomovelId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AutomovelId })
+            @Html.ActionLink("Editar", "Edit", new { id=item.AutomovelId }) |
+            @Html.ActionLink("Detailhes", "Details", new { id=item.AutomovelId }) |
+            @Html.ActionLink("Deletar", "Delete", new { id=item.AutomovelId })
         </td>
     </tr>
 }
